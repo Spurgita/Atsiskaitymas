@@ -1,0 +1,46 @@
+header {
+    height: 116px;
+    background: rgba(196, 196, 196, 0.1);
+    @include flex_center();
+}
+nav {
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 72px;
+    height: auto;
+    align-self: center;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    li {
+        padding: 0 10px;
+        a {
+            text-decoration: none;
+        }
+    }
+    @include responsive-sm {
+        display: none;
+    }
+}
+.button {
+    @include button();
+    @include responsive-sm {
+        display: none;
+    }
+}
+.menu {
+    display: none;
+    @include responsive-sm() {
+        display: inline-block;
+        text-decoration: none;
+    }
+}

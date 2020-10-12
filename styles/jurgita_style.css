@@ -1,0 +1,346 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-attachment: fixed;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 100%;
+  color: #696a86;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #696a86;
+}
+
+a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #717784;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #626780;
+  text-align: center;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #626780;
+}
+
+h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: #626780;
+}
+
+header {
+  height: 116px;
+  background: rgba(196, 196, 196, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  width: 80%;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 72px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+ul li {
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+  }
+}
+
+.button {
+  width: 234px;
+  height: 60px;
+  background: #9b9bca;
+  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: white;
+  color: #626780;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.background {
+  background-image: url(/image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .background {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(48.96%, #ffffff), to(#e5e5e5));
+    background-image: linear-gradient(180deg, #ffffff 48.96%, #e5e5e5 100%);
+  }
+}
+
+.slogan {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slogan .button {
+  width: 234px;
+  height: 60px;
+  background: #9b9bca;
+  border-radius: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.slogan .button:hover {
+  background-color: white;
+  color: #626780;
+}
+
+.info {
+  padding-top: 12.25%;
+  padding-left: 15%;
+  padding-bottom: 7%;
+  width: 60%;
+}
+
+.info h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .info h3 {
+    text-align: center;
+  }
+}
+
+main {
+  background-color: white;
+  padding-top: 12.25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .provide {
+  width: 60%;
+  margin-top: 5rem;
+}
+
+main .icons {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  main .icons {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .icons {
+    width: 100%;
+  }
+}
+
+main .element {
+  width: 25%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .element p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  main .element {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .element {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #bbbbbb;
+}
+/*# sourceMappingURL=jurgita_style.css.map */

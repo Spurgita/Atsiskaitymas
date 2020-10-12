@@ -1,0 +1,43 @@
+@mixin flex_center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin responsive-sm() {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin responsive-md() {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin responsive-lg() {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin button() {
+    width: 234px;
+    height: 60px;
+
+    background: #9b9bca;
+    border-radius: 10px;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    &:hover {
+        background-color: white;
+        color: $base_color;
+    }
+}
